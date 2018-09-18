@@ -40,8 +40,8 @@ will have a **constant time complexity**!
 Let us now proceed to another function that takes a List of elements and sums them up! 
 
 ```
-def sumOfList(l: List[Int]) = l match {
-  case x :: tail => x + sum(tail) // if there is an element, add it to the sum of the tail
+def sumOfList(l: List[Int]): Int = l match {
+  case x :: tail => x + sumOfList(tail) // if there is an element, add it to the sum of the tail
   case Nil => 0 // if there are no elements, then the sum is 0
 }
 ```
@@ -51,9 +51,39 @@ the best algorithm available to sum a List of Int's in Scala. Now let us apply o
 
 Here we assume that the List is not empty and has atleast 2 elements in it!
 
-| Operation     | Description         | Number of times of Execution         | Time taken |
+| Operation     | Description  | Time taken for one run   | Number of executions |
 | ------------- | ------------- | ------------- | ------------- |
-| x + sum(tail) | There is one addition and one return, so we need 2 seconds  | 2 | |
-| case Nil | If in case the List is empty, we return | 1 | |
+| x + sum(tail)    | There is one addition and one return, so we need 2 seconds for one run | 2 | list.size times |
+| case Nil     | If in case the List is empty, we return | 1 | |
+
+So the total time taken can be derived as:
+
+Total time is proportional to 2n where n is the number of times the execution happens, so mathematically we can write this as a linear function
+
+```
+T = an + b
+```
+
+Where a represents the number of times the execution happens and b is some constant that brings our proportionality into an equality!
+
+So this is a classical linear function what we have just dereived for our sumOfList. Good so far! So these are our equations fo far:
+
+```
+Tsum = k                    ---- eq 1
+
+TsumOfList = an + b         ---- eq 2
+
+TsumOfMatric = an2 + bn + c ---- eq 3
+```
+
+eq 1 is a contstant
+
+eq 2 is a linear function
+
+eq 3 is a quadriatic function
+
+If we now plot all this in a graph Input vs Time, we see the following:
+
+
 
 TODO: En construction!
