@@ -84,6 +84,7 @@ eq 3 is a quadriatic function
 
 If we now plot all this in a graph Input vs Time, we see the following:
 
-
+![time-input-plot](https://github.com/joesan/random-documentation/blob/master/time-complexity-of-a-running-algorithm/time-input-plot.png
+)
 
 TODO: En construction!
