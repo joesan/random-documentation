@@ -56,3 +56,4 @@ Here we assume that the List is not empty and has atleast 2 elements in it!
 | x + sum(tail) | There is one addition and one return, so we need 2 seconds  | 2 | |
 | case Nil | If in case the List is empty, we return | 1 | |
 
+TODO: En construction!
