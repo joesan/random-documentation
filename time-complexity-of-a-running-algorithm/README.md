@@ -87,4 +87,14 @@ If we now plot all this in a graph Input vs Time, we see the following:
 ![time-input-plot](https://github.com/joesan/random-documentation/blob/master/time-complexity-of-a-running-algorithm/time-input-plot.png
 )
 
-TODO: En construction!
+So in Asymptotic notation, this would mean the following:
+
+```
+eq 1 is O(1)
+
+eq 2 is O(n)
+
+eq 3 is O(n to the power 2)
+```
+
+Hope this is clear enough!
