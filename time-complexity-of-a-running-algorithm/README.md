@@ -90,11 +90,11 @@ If we now plot all this in a graph Input vs Time, we see the following:
 So in Asymptotic notation, this would mean the following:
 
 ```
-eq 1 is O(1)
+eq 1 is O(1) - A constant time
 
-eq 2 is O(n)
+eq 2 is O(n) - A linear time
 
-eq 3 is O(n to the power 2)
+eq 3 is O(n to the power 2) - A quariatic time
 ```
 
 Hope this is clear enough!
