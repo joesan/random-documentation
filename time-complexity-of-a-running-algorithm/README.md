@@ -1,4 +1,4 @@
-# Time complexity of an Algrithm
+# Time complexity of an Algorithm
 
 When you have written some logic, you normally would not worry about its runtime. You assume that it runs efficiently as it was promised
 by the underlying programming language. But sometimes it makes sense to dig a bit deeper and to understand how well your
